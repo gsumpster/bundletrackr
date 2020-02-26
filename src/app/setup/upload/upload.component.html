@@ -1,0 +1,13 @@
+<h1>Upload Build Statistics <br> for <bt-git-commit>{{commitSha$ | async | slice:0:7}}</bt-git-commit></h1> 
+<bt-file-drop dropZoneLabel="drag your stats.json file here" (onFileDropped)="onFileDropped($event)"></bt-file-drop>
+<span class="c-word-divider">or</span>
+<div class="l-cards">
+    <div class="c-card">
+        <h2>Build with BundleTrackr</h2>
+        <img src="/assets/build.svg" alt="Build with BundleTrackr">
+    </div>
+    <div class="c-card">
+        <h2>Configure Docker Machine</h2>
+        <img src="/assets/docker.svg" alt="Configure Docker Machine">
+    </div>
+</div>

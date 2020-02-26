@@ -1,0 +1,16 @@
+<h1>Configure Instance</h1>
+<form [formGroup]="gitForm">
+    <bt-form-field label="Git URL">
+        <input placeholder="https://github.com" formControlName="gitUrl">
+    </bt-form-field>
+    <!-- <bt-form-field label="Git Username">
+        <input placeholder="jsmith" formControlName="gitUsername">
+    </bt-form-field>
+    <bt-form-field label="Git Password">
+        <input placeholder="password" type="password" formControlName="gitPassword">
+    </bt-form-field> -->
+    <bt-form-field label="Default Branch">
+        <bt-autocomplete placeholder="master" [data]="branches$ | async" [control]="gitForm.get('defaultBranch')"></bt-autocomplete>
+    </bt-form-field>
+    <bt-button (click)="submit()">Submit</bt-button>
+</form>

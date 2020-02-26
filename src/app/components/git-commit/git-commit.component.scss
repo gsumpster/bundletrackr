@@ -1,0 +1,17 @@
+:host {
+    margin: 0 5px;
+    background: #44556B;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: #CFD7DB;
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-flex;
+    -webkit-font-smoothing: antialiased;
+
+    img {
+        margin-right: 10px;
+    }
+}

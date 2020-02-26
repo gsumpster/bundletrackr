@@ -1,0 +1,14 @@
+<div class="ng-autocomplete">
+    <ng-autocomplete 
+      [data]="data"
+      [placeHolder]="placeholder"
+      [formControl]="control"
+      [isLoading]="isLoading"
+      [itemTemplate]="itemTemplate"
+      >                                 
+    </ng-autocomplete>
+     
+    <ng-template #itemTemplate let-item>
+        <a [innerHTML]="item"></a>
+    </ng-template>
+</div>

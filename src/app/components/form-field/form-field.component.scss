@@ -1,0 +1,72 @@
+div.bt-form-field {
+    margin: 20px 0;
+
+    > label {
+        display: block;
+        -webkit-font-smoothing: antialiased;
+        font-weight: lighter;
+        font-size: 17px;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }
+    
+    > input, > bt-autocomplete > .ng-autocomplete > ng-autocomplete input {
+        outline: none;
+        -webkit-appearance: none;
+        border: 1px solid #3E4E6C;
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        padding: 13px 10px;
+        background: #ffffff;
+        border-radius: 5px;
+        color: #242E42;
+        font-family: 'Roboto', sans-serif;
+
+        &:focus, &:active {
+            border-color: #1F8EFA;
+            color: #1F8EFA;
+        }
+
+        &::placeholder {
+            color: #657D95;
+        }
+    }
+
+    .autocomplete-container {
+        height: 32px;
+        box-shadow: none;
+
+        .input-container .x i {
+            display: none;
+        }
+    }
+
+    .autocomplete-container .suggestions-container ul li a {
+        padding: 14px 10px;
+        color: #242E42;
+        font-size: 12px;
+    }
+    
+    .active > .input-container > input {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important
+        ;
+    }
+    
+    .active .suggestions-container {
+        border-bottom-left-radius: 4px;
+        background-color: #ffffff;
+        border-bottom-right-radius: 4px;
+        border: 1px solid #3e4e6c;
+        border-top: 0;
+    }
+
+    
+
+    .not-found {
+        display: none;
+    }
+    
+}
+
